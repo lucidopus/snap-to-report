@@ -7,7 +7,7 @@ export async function POST(req: NextRequest) {
 
   const res = await fetch(backend!, {
     method: "POST",
-    headers: { "X-API-Key": apiKey, accept: "application/json" },
+    headers: { "X-API-Key": apiKey, accept: "application/json" } as HeadersInit,
     body: form,
   });
 
